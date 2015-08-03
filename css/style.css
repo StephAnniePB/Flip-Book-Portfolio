@@ -11,6 +11,12 @@ body {
 
 h1 {
   text-align: center;
+  
+}
+.headshot{
+  width: 50%; 
+  float: left;
+
 }
 
 .scene {
@@ -78,6 +84,10 @@ p {
 }
 .qr img {
   display: block;
+}
+#pagetwo h1, #pagetwo p{
+  width: 50%;
+  float: right;
 }
 
 
