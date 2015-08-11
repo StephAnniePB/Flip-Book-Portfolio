@@ -1,18 +1,26 @@
 html {
   height: 100%;
-  overflow: hidden;
 }
 body {
   background: black;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 162%;
+}
+header{
+  color: #29b000;
 }
 
 h1 {
   text-align: center;
+  color: #a90091;
   
 }
+p{
+text-align: center;
+color:#29b000;
+}
+
 .headshot{
   width: 50%; 
   float: left;
@@ -36,6 +44,7 @@ h1 {
 }
 
 .page {
+  background-size: 100% 100%;
   cursor: pointer;
   position: absolute;
   color: black;
@@ -48,17 +57,21 @@ h1 {
 }
 .front,
 .back {
+  background-size: 100% 100%;
   position: absolute;
-  
   width: 100%;
   height: 100%;
   padding: 10% 5% 5%;
   box-sizing: border-box;
-  
   backface-visibility: hidden;
-  background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
-  background: linear-gradient(to bottom right, #fff, #ccc);
 }
+.front {
+  background-image: url(../img/paper.jpg);
+}
+.back {
+  background-image: url(../img/paper_flipped.jpg);
+}
+
 .back {
   transform: rotateY(180deg);
 }
@@ -78,17 +91,12 @@ p {
   text-indent: 1em;
 }
 
-.qr {
-  margin: 50px auto;
-  max-width: 50%;
-}
-.qr img {
-  display: block;
-}
 #pagetwo h1, #pagetwo p{
   width: 50%;
   float: right;
 }
+
+footer {}
 
 
 /* iPads (portrait) ----------- */
