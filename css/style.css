@@ -110,12 +110,33 @@ h2 {
   font-size: 1.8em;
   margin-top: 0;
 }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
+h3 {
+  font-size: 1.3em;
+  color: #29b000;
+  font-style: italic;
+  margin: 1.3em 0 0.65em;
+}
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
 h6 { font-size: 1em; }
 p {
   color:#186900;
+}
+li {
+  margin: 0.2em 0;
+}
+a:link {
+  color: #29b000;
+  text-decoration: none;
+}
+a:visited {
+  color: #29b000;
+}
+a:hover {
+  color: #a90091;
+}
+a:active {
+  color: #29b000;
 }
 
 #pagetwo h1{
