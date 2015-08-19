@@ -1,38 +1,26 @@
 html {
-  height: 100%;
 }
 body {
   background: black;
+  background-image: url(../img/wood.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
-  width: 100%;
-  height: 162%;
-}
-header{
-  color: #29b000;
+  font-family: 'Antic', sans-serif;
+  font-size: 1.5vw;
 }
 
-h1 {
+.headshot {
   text-align: center;
-  color: #a90091;
-  
 }
-p{
-text-align: center;
-color:#29b000;
-font-size: 18px;
-}
-
-.headshot{
+.headshot img {
   width: 50%; 
-  float: left;
-
 }
 
 .scene {
-    width: 45%;
-    height: 90%;
-    margin: 5% 5% 5% 50%;
-  
+  width: 45vw;
+  height: 60vw;
+  margin: 5vw 5vw 5vw 50vw;
   perspective: 1000px;
 }
 
@@ -52,7 +40,7 @@ font-size: 18px;
   width: 100%;
   height: 100%;
 
-  transition: 1.5s transform;
+  transition: transform 1.5s, box-shadow 1.5s;
   transform-style: preserve-3d;  
   transform-origin: left center;
 }
@@ -68,9 +56,13 @@ font-size: 18px;
 }
 .front {
   background-image: url(../img/paper.jpg);
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 .back {
   background-image: url(../img/paper_flipped.jpg);
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 .back {
@@ -79,6 +71,7 @@ font-size: 18px;
 
 .page.active {
   z-index: 1;
+
 }
 .page.flipped {
   transform: rotateY(-180deg);
@@ -86,19 +79,53 @@ font-size: 18px;
 .page.flipped:last-of-type {
   z-index: 1;
 }
-
-p {
-  margin: 0 0 0.1em;
-  text-indent: 1em;
+.page:last-of-type {
+  box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.5);
+}
+.page:last-of-type.flipped {
+  box-shadow: -0.5vw 0.5vw 1vw rgba(0,0,0,0.5);
 }
 
-#pagetwo h1, #pagetwo p{
+.page:first-of-type, .page:first-of-type.flipped {
+  box-shadow: -0.5vw 0.5vw 1vw rgba(0,0,0,0.5);
+}
+.page:first-of-type.active {
+  box-shadow: 0.5vw 0.5vw 1vw rgba(0,0,0,0.5);
+}
+
+footer {
+  background-color: black;
+  padding: 1vw;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Amaranth', sans-serif;
+  color: #a90091;
+}
+h1, h2 {
+  text-align: center;
+}
+h1 { font-size: 2em; }
+h2 { 
+  font-size: 1.8em;
+  margin-top: 0;
+}
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+p {
+  color:#186900;
+}
+
+#pagetwo h1{
   width: 50%;
   float: right;
 }
 
-footer {}
-
+#pagetwo p {
+  clear: both;
+}
 
 /* iPads (portrait) ----------- */
 @media only screen 
@@ -109,4 +136,4 @@ and (orientation : portrait) {
     width: 90%;
     height: 90%;
     margin: 5%;
-}
+  }

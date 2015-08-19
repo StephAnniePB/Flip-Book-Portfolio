@@ -3,3 +3,5 @@ A Pen created at CodePen.io. You can find this one at http://codepen.io/StephAnn
  A simple Page Flip Effect with swipeleft / swiperight support for the iPad. Just a quick demo, not rock solid.
 
 Forked from [Timo Hausmann](http://codepen.io/timohausmann/)'s Pen [iPad Page Flip](http://codepen.io/timohausmann/pen/xdKkA/).
+
+Wood texture by [EmoDJSteph at DeviantArt](http://emodjsteph.deviantart.com/).
